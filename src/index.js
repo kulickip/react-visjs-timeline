@@ -35,11 +35,11 @@ each(events, event => {
 export default class Timeline extends Component {
 
   componentWillMount() {
-    this.state = {
+    this.setState({
       // NOTE we store custom times on the state to enable us to diff with new
       // custom times and add or remove the elements with visjs
       customTimes: []
-    }
+    })
   }
 
   componentWillUnmount() {
